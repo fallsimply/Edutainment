@@ -63,7 +63,7 @@ public class GameControlScript : MonoBehaviour {
 	public void FinishedGame() {
 		isRunning = false;
 		isFinished = true;
-		message.text = $"Completed in {((int)time).ToString()} seconds.";
+		OnGUI();
 		Debug.Log("Game Completed");
 
 	}

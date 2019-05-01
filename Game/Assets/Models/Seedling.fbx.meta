@@ -48,7 +48,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Stem
-    second: {fileID: 2100002, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
+    second: {fileID: 2100000, guid: 559973faa23c0d14b86c32b1bdaf9164, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

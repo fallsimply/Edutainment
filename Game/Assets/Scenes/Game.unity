@@ -439,7 +439,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 100004, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+    - target: {fileID: 100002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_Name
+      value: Flower
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
       propertyPath: m_TagString
       value: Flower
       objectReference: {fileID: 0}
@@ -447,11 +451,7 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Flower
       objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
-      propertyPath: m_Name
-      value: Flower
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+    - target: {fileID: 100004, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
       propertyPath: m_TagString
       value: Flower
       objectReference: {fileID: 0}
@@ -795,10 +795,10 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 140, y: 25}
-  m_SizeDelta: {x: 250, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 15, y: 15}
+  m_SizeDelta: {x: -30, y: 30}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &959787967
 MonoBehaviour:
   m_ObjectHideFlags: 0
