@@ -8,7 +8,9 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 	public Image receivingImage;
 	private Color normalColor;
 	public Color highlightColor = Color.yellow;
+	[HideInInspector()]
 	public bool disabled = false;
+	public SortController SortController;
 
 	public void OnEnable() {
 		if (containerImage != null)
@@ -16,20 +18,30 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 	}
 
 	public void OnDrop(PointerEventData data) {
-		containerImage.color = normalColor;
+		if (disabled | receivingImage == null) return;
 
-		if (receivingImage == null) return;
+		containerImage.color = normalColor;
 
 		Sprite dropSprite = GetDropSprite(data);
 		if (dropSprite != null) {
 			receivingImage.overrideSprite = dropSprite;
-			data.pointerDrag.SendMessage("disable");
+			if (data.pointerDrag.tag == this.tag) {
+				data.pointerDrag.SendMessage("disable");
+				disabled = true;
+
+				GameObject newobj = Instantiate(data.pointerDrag.gameObject);
+				newobj.transform.SetParent(this.transform.parent);
+				newobj.transform.position = this.transform.position;
+
+				SortController.Inventory.Add(this.tag);
+				SortController.CheckFinish();
+				//= data.pointerDrag.gameObject;
+			}
 		}
 	}
 
 	public void OnPointerEnter(PointerEventData data) {
-		if (disabled) return;
-		if (containerImage == null) return;
+		if (disabled | containerImage == null) return;
 
 		Sprite dropSprite = GetDropSprite(data);
 		if (dropSprite != null)
@@ -37,8 +49,7 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 	}
 
 	public void OnPointerExit(PointerEventData data) {
-		if (containerImage == null)
-			return;
+		if (containerImage == null) return;
 
 		containerImage.color = normalColor;
 	}

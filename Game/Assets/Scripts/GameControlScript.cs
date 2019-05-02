@@ -50,8 +50,9 @@ public class GameControlScript : MonoBehaviour {
 		List<string> missing = new List<string>();
 
 		foreach (string item in finishedItems) {
-			if (!finishedItems.Contains(item))
+			if (!Inventory.Contains(item)) {
 				missing.Add(item);
+			}
 		}
 		Debug.Log($"Missing: {missing.Count} items, {string.Join(",", missing)}");
 		if (missing.Count == 0)

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Image))]
 public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
 	public bool dragOnSurfaces = true;
+	[HideInInspector()]
 	public bool disabled = false;
 
 	private Dictionary<int, GameObject> m_DraggingIcons = new Dictionary<int, GameObject>();
@@ -18,19 +19,16 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 
 		// We have clicked something that can be dragged.
 		// What we want to do is create an icon for this.
-		m_DraggingIcons[eventData.pointerId] = new GameObject("icon");
+		m_DraggingIcons[eventData.pointerId] = Instantiate(this.gameObject);
+
+		m_DraggingIcons[eventData.pointerId].name = $"{this.name} Icon";
 
 		m_DraggingIcons[eventData.pointerId].transform.SetParent(canvas.transform, false);
 		m_DraggingIcons[eventData.pointerId].transform.SetAsLastSibling();
 
-		var image = m_DraggingIcons[eventData.pointerId].AddComponent<Image>();
-		// The icon will be under the cursor.
-		// We want it to be ignored by the event system.
 		var group = m_DraggingIcons[eventData.pointerId].AddComponent<CanvasGroup>();
 		group.blocksRaycasts = false;
 
-		image.sprite = GetComponent<Image>().sprite;
-		image.SetNativeSize();
 
 		if (dragOnSurfaces)
 			m_DraggingPlanes[eventData.pointerId] = transform as RectTransform;
@@ -46,8 +44,9 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 	}
 
 	private void SetDraggedPosition(PointerEventData eventData) {
-		if (dragOnSurfaces && eventData.pointerEnter != null && eventData.pointerEnter.transform as RectTransform != null)
+		if (dragOnSurfaces && eventData.pointerEnter != null && eventData.pointerEnter.transform as RectTransform != null) {
 			m_DraggingPlanes[eventData.pointerId] = eventData.pointerEnter.transform as RectTransform;
+		}
 
 		var rt = m_DraggingIcons[eventData.pointerId].GetComponent<RectTransform>();
 		Vector3 globalMousePos;
@@ -58,9 +57,9 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 	}
 
 	public void OnEndDrag(PointerEventData eventData) {
-		if (m_DraggingIcons[eventData.pointerId] != null)
+		if (m_DraggingIcons[eventData.pointerId] != null) {
 			Destroy(m_DraggingIcons[eventData.pointerId]);
-
+		}
 		m_DraggingIcons[eventData.pointerId] = null;
 	}
 

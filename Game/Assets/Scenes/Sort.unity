@@ -124,8 +124,8 @@ GameObject:
   - component: {fileID: 1311822}
   - component: {fileID: 1311821}
   m_Layer: 5
-  m_Name: Drop Container (4)
-  m_TagString: Untagged
+  m_Name: Drop Container (Fruit)
+  m_TagString: Fruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -187,6 +187,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311819}
   m_CullTransparentMesh: 0
+--- !u!1001 &36053207
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1464936699}
+    m_Modifications:
+    - target: {fileID: 100002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_Name
+      value: Flower
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -42
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 25
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1812d739768da674c80b87ddd17daff3, type: 3}
 --- !u!1 &36399377
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,8 +268,8 @@ GameObject:
   - component: {fileID: 36399380}
   - component: {fileID: 36399379}
   m_Layer: 5
-  m_Name: Drop Container (1)
-  m_TagString: Untagged
+  m_Name: Drop Container (Seedling)
+  m_TagString: Seedling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -276,7 +345,7 @@ GameObject:
   - component: {fileID: 69686520}
   m_Layer: 5
   m_Name: Drop Zone
-  m_TagString: Untagged
+  m_TagString: Fruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -316,6 +385,7 @@ MonoBehaviour:
   receivingImage: {fileID: 69686521}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   disabled: 0
+  SortController: {fileID: 863629405}
 --- !u!114 &69686521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,6 +423,156 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69686518}
   m_CullTransparentMesh: 0
+--- !u!1001 &143338572
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1571528146}
+    m_Modifications:
+    - target: {fileID: 100002, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+      propertyPath: m_Name
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -42
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 25
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73032d4fce26d50458976fa6429721e1, type: 3}
+--- !u!4 &279543857 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400006, guid: 39cb543489858de4f89c3031d9bc1f02,
+    type: 3}
+  m_PrefabInstance: {fileID: 1502202294}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &289345259 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 73032d4fce26d50458976fa6429721e1,
+    type: 3}
+  m_PrefabInstance: {fileID: 143338572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &337724443
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1523291552}
+    m_Modifications:
+    - target: {fileID: 100002, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
+      propertyPath: m_Name
+      value: Fruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -41
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 25
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 71d5bb8ee83e7ee479555257f85c7076, type: 3}
 --- !u!1 &379284685
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,7 +640,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &531727526
 GameObject:
@@ -436,7 +656,7 @@ GameObject:
   - component: {fileID: 531727528}
   m_Layer: 5
   m_Name: Drop Zone
-  m_TagString: Untagged
+  m_TagString: Seed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -476,6 +696,7 @@ MonoBehaviour:
   receivingImage: {fileID: 531727529}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   disabled: 0
+  SortController: {fileID: 863629405}
 --- !u!114 &531727529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,7 +798,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555733781
 GameObject:
@@ -591,8 +812,8 @@ GameObject:
   - component: {fileID: 555733784}
   - component: {fileID: 555733783}
   m_Layer: 5
-  m_Name: Drop Container (2)
-  m_TagString: Untagged
+  m_Name: Drop Container (Plant)
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -654,6 +875,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555733781}
   m_CullTransparentMesh: 0
+--- !u!1 &587229662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 587229663}
+  - component: {fileID: 587229665}
+  - component: {fileID: 587229664}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &587229663
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587229662}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1716557182}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 367}
+  m_SizeDelta: {x: 0, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &587229664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587229662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Yay! You found all the items. Now you have to sort them into the order of
+    the plant cycle
+--- !u!222 &587229665
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587229662}
+  m_CullTransparentMesh: 0
+--- !u!4 &822469066 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400008, guid: 94d00a57339aa134fb50597f3326e07b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1538781086}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &848673620
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,7 +975,7 @@ GameObject:
   - component: {fileID: 848673622}
   m_Layer: 5
   m_Name: Drop Zone
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -708,6 +1015,7 @@ MonoBehaviour:
   receivingImage: {fileID: 848673623}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   disabled: 0
+  SortController: {fileID: 863629405}
 --- !u!114 &848673623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -745,6 +1053,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848673620}
   m_CullTransparentMesh: 0
+--- !u!1 &863629404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 863629406}
+  - component: {fileID: 863629405}
+  m_Layer: 0
+  m_Name: SortController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &863629405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863629404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1379628c8404a8347bb374960928759a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stages:
+  - Seed
+  - Seedling
+  - Plant
+  - Flower
+  - Fruit
+  Inventory: []
+  MainMenu: {fileID: 102900000, guid: 324fb33471ccf504ba85f5d5f84838d8, type: 3}
+--- !u!4 &863629406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863629404}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 623.43005, y: 112.740746, z: -2.457412}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &975784912
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,8 +1117,8 @@ GameObject:
   - component: {fileID: 975784915}
   - component: {fileID: 975784914}
   m_Layer: 5
-  m_Name: Image (1)
-  m_TagString: Untagged
+  m_Name: Seedling
+  m_TagString: Seedling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -774,7 +1133,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 822469066}
   m_Father: {fileID: 1716557182}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -810,15 +1170,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2fb23f37e43d16446a8f4496536db7bc, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -848,7 +1208,7 @@ GameObject:
   - component: {fileID: 1296716772}
   m_Layer: 5
   m_Name: Drop Zone
-  m_TagString: Untagged
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -888,6 +1248,7 @@ MonoBehaviour:
   receivingImage: {fileID: 1296716773}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   disabled: 0
+  SortController: {fileID: 863629405}
 --- !u!114 &1296716773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -925,6 +1286,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296716770}
   m_CullTransparentMesh: 0
+--- !u!4 &1385840791 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 71d5bb8ee83e7ee479555257f85c7076,
+    type: 3}
+  m_PrefabInstance: {fileID: 337724443}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1411261580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,7 +1368,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411261580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 775, y: 425, z: -800}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1020,8 +1387,8 @@ GameObject:
   - component: {fileID: 1464936701}
   - component: {fileID: 1464936700}
   m_Layer: 5
-  m_Name: Image (3)
-  m_TagString: Untagged
+  m_Name: Flower
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1036,7 +1403,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1878676579}
   m_Father: {fileID: 1716557182}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1072,15 +1440,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2fb23f37e43d16446a8f4496536db7bc, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1108,8 +1476,8 @@ GameObject:
   - component: {fileID: 1477037895}
   - component: {fileID: 1477037894}
   m_Layer: 5
-  m_Name: Drop Container
-  m_TagString: Untagged
+  m_Name: Drop Container (Seed)
+  m_TagString: Seed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1176,19 +1544,35 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1721174666}
     m_Modifications:
     - target: {fileID: 100006, guid: 39cb543489858de4f89c3031d9bc1f02, type: 3}
       propertyPath: m_Name
       value: Seed
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 39cb543489858de4f89c3031d9bc1f02, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 39cb543489858de4f89c3031d9bc1f02, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 39cb543489858de4f89c3031d9bc1f02, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 39cb543489858de4f89c3031d9bc1f02, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 39cb543489858de4f89c3031d9bc1f02, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 504
+      value: -1.5543823
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 39cb543489858de4f89c3031d9bc1f02, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 89
+      value: -44
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 39cb543489858de4f89c3031d9bc1f02, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1196,15 +1580,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 39cb543489858de4f89c3031d9bc1f02, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 39cb543489858de4f89c3031d9bc1f02, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 39cb543489858de4f89c3031d9bc1f02, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 39cb543489858de4f89c3031d9bc1f02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1212,7 +1596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 39cb543489858de4f89c3031d9bc1f02, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 39cb543489858de4f89c3031d9bc1f02, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1253,8 +1637,8 @@ GameObject:
   - component: {fileID: 1523291554}
   - component: {fileID: 1523291553}
   m_Layer: 5
-  m_Name: Image (4)
-  m_TagString: Untagged
+  m_Name: Fruit
+  m_TagString: Fruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1269,7 +1653,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1385840791}
   m_Father: {fileID: 1716557182}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1305,15 +1690,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2fb23f37e43d16446a8f4496536db7bc, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1334,19 +1719,43 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 975784913}
     m_Modifications:
     - target: {fileID: 100008, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
       propertyPath: m_Name
       value: Seedling
       objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 639
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 84
+      value: -46.5
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1354,15 +1763,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1370,7 +1779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 94d00a57339aa134fb50597f3326e07b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1411,8 +1820,8 @@ GameObject:
   - component: {fileID: 1571528148}
   - component: {fileID: 1571528147}
   m_Layer: 5
-  m_Name: Image (2)
-  m_TagString: Untagged
+  m_Name: Plant
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1427,7 +1836,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 289345259}
   m_Father: {fileID: 1716557182}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1463,15 +1873,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2fb23f37e43d16446a8f4496536db7bc, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1554,8 +1964,8 @@ Canvas:
   m_GameObject: {fileID: 1716557178}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 2
+  m_Camera: {fileID: 1411261582}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1575,7 +1985,7 @@ RectTransform:
   m_GameObject: {fileID: 1716557178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1477037892}
   - {fileID: 36399378}
@@ -1587,14 +1997,15 @@ RectTransform:
   - {fileID: 1571528146}
   - {fileID: 1464936699}
   - {fileID: 1523291552}
+  - {fileID: 587229663}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 762, y: 381}
+  m_SizeDelta: {x: 1524, y: 762}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1721174665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,8 +2019,8 @@ GameObject:
   - component: {fileID: 1721174668}
   - component: {fileID: 1721174667}
   m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
+  m_Name: Seed
+  m_TagString: Seed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1624,7 +2035,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 279543857}
   m_Father: {fileID: 1716557182}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1660,15 +2072,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: bdc5d827217058e4284db341c06164d3, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1698,7 +2110,7 @@ GameObject:
   - component: {fileID: 1787222231}
   m_Layer: 5
   m_Name: Drop Zone
-  m_TagString: Untagged
+  m_TagString: Seedling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1738,6 +2150,7 @@ MonoBehaviour:
   receivingImage: {fileID: 1787222232}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   disabled: 0
+  SortController: {fileID: 863629405}
 --- !u!114 &1787222232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1775,6 +2188,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787222229}
   m_CullTransparentMesh: 0
+--- !u!4 &1878676579 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 1812d739768da674c80b87ddd17daff3,
+    type: 3}
+  m_PrefabInstance: {fileID: 36053207}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2142586607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,8 +2206,8 @@ GameObject:
   - component: {fileID: 2142586610}
   - component: {fileID: 2142586609}
   m_Layer: 5
-  m_Name: Drop Container (3)
-  m_TagString: Untagged
+  m_Name: Drop Container (Flower)
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
