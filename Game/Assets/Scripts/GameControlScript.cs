@@ -24,6 +24,8 @@ public class GameControlScript : MonoBehaviour {
 
 	[Header("UI")]
 	public Text message;
+	[Header("Controllers")]
+	public UIController EventController;
 
 
 	//This resets to game back to the way it started
@@ -66,6 +68,7 @@ public class GameControlScript : MonoBehaviour {
 		isFinished = true;
 		OnGUI();
 		Debug.Log("Game Completed");
+		EventController.Sort();
 
 	}
 

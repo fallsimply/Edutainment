@@ -3,7 +3,12 @@ guid: fa3fb7db3621acc4e85fd8af8590e24c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - GameScene: {fileID: 102900000, guid: 9bb91d151fb7f0c429ea23853a55c890, type: 3}
+  - MenuScene: {fileID: 102900000, guid: 324fb33471ccf504ba85f5d5f84838d8, type: 3}
+  - SortScene: {fileID: 102900000, guid: 53183dad44d285042bc43ed0bedb4669, type: 3}
+  - ControlsScene: {fileID: 102900000, guid: 3963c439baefa9849873d6f4e47bb3a6, type: 3}
+  - WinScene: {fileID: 102900000, guid: 6a005f11319b7b24484ff497b743090c, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

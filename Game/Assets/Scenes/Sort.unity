@@ -745,6 +745,7 @@ GameObject:
   - component: {fileID: 537056233}
   - component: {fileID: 537056232}
   - component: {fileID: 537056231}
+  - component: {fileID: 537056234}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -800,6 +801,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &537056234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537056230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3fb7db3621acc4e85fd8af8590e24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameScene: {fileID: 102900000, guid: 9bb91d151fb7f0c429ea23853a55c890, type: 3}
+  MenuScene: {fileID: 102900000, guid: 324fb33471ccf504ba85f5d5f84838d8, type: 3}
+  SortScene: {fileID: 102900000, guid: 53183dad44d285042bc43ed0bedb4669, type: 3}
+  ControlsScene: {fileID: 102900000, guid: 3963c439baefa9849873d6f4e47bb3a6, type: 3}
+  WinScene: {fileID: 102900000, guid: 6a005f11319b7b24484ff497b743090c, type: 3}
 --- !u!1 &555733781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,7 +1107,7 @@ MonoBehaviour:
   - Flower
   - Fruit
   Inventory: []
-  MainMenu: {fileID: 102900000, guid: 324fb33471ccf504ba85f5d5f84838d8, type: 3}
+  EventController: {fileID: 537056234}
 --- !u!4 &863629406
 Transform:
   m_ObjectHideFlags: 0

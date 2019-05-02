@@ -11,9 +11,8 @@ public class SortController : MonoBehaviour {
 	};
 	public List<string> Inventory = new List<string>();
 
-	[Header("Scenes")]
-	public Object MainMenu;
-
+	[Header("Controllers")]
+	public UIController EventController;
 
 	public void CheckFinish() {
 		List<string> finishedItems = new List<string>(stages);
@@ -33,6 +32,6 @@ public class SortController : MonoBehaviour {
 	//This runs when the player enters the finish zone
 	public void FinishedSort() {
 		Debug.Log("Sort Completed");
-		SceneManager.LoadScene(MainMenu.name);
+		EventController.Win();
 	}
 }

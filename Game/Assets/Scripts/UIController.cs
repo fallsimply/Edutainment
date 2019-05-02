@@ -5,7 +5,16 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIController : MonoBehaviour {
-	public Object GameScene;
+	[SerializeField]
+	private Object GameScene;
+	[SerializeField]
+	private Object MenuScene;
+	[SerializeField]
+	private Object SortScene;
+	[SerializeField]
+	private Object ControlsScene;
+	[SerializeField]
+	private Object WinScene;
 
 	public void Quit() {
 		Application.Quit();
@@ -15,7 +24,19 @@ public class UIController : MonoBehaviour {
 		SceneManager.LoadScene(GameScene.name);
 	}
 
+	public void Sort() {
+		SceneManager.LoadScene(SortScene.name);
+	}
+
 	public void Controls() {
-		SceneManager.LoadScene("", LoadSceneMode.Additive);
+		SceneManager.LoadScene(ControlsScene.name, LoadSceneMode.Additive);
+	}
+
+	public void Win() {
+		SceneManager.LoadScene(WinScene.name, LoadSceneMode.Additive);
+	}
+
+	public void MainMenu() {
+		SceneManager.LoadScene(MenuScene.name);
 	}
 }
