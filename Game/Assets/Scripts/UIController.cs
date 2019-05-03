@@ -6,37 +6,37 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour {
 	[SerializeField]
-	private Object GameScene;
+	private string GameScene;
 	[SerializeField]
-	private Object MenuScene;
+	private string MenuScene;
 	[SerializeField]
-	private Object SortScene;
+	private string SortScene;
 	[SerializeField]
-	private Object ControlsScene;
+	private string ControlsScene;
 	[SerializeField]
-	private Object WinScene;
+	private string WinScene;
 
 	public void Quit() {
 		Application.Quit();
 	}
 
 	public void Play() {
-		SceneManager.LoadScene(GameScene.name);
+		SceneManager.LoadScene(GameScene);
 	}
 
 	public void Sort() {
-		SceneManager.LoadScene(SortScene.name);
+		SceneManager.LoadScene(SortScene);
 	}
 
 	public void Controls() {
-		SceneManager.LoadScene(ControlsScene.name, LoadSceneMode.Additive);
+		SceneManager.LoadScene(ControlsScene, LoadSceneMode.Additive);
 	}
 
 	public void Win() {
-		SceneManager.LoadScene(WinScene.name, LoadSceneMode.Additive);
+		SceneManager.LoadScene(WinScene, LoadSceneMode.Additive);
 	}
 
 	public void MainMenu() {
-		SceneManager.LoadScene(MenuScene.name);
+		SceneManager.LoadScene(MenuScene);
 	}
 }

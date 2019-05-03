@@ -9,5 +9,6 @@ public class PlantController : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		gameController.Inventory.Add(this.gameObject.tag);
 		gameController.CheckFinish();
+		this.gameObject.SetActive(false);
 	}
 }
