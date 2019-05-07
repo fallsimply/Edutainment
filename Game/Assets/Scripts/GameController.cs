@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
-public class GameControlScript : MonoBehaviour {
+public class GameController : MonoBehaviour {
 
 	//The amount of ellapsed time
 	private float time = 0;
@@ -56,7 +56,7 @@ public class GameControlScript : MonoBehaviour {
 				missing.Add(item);
 			}
 		}
-		Debug.Log($"Missing: {missing.Count} items, {string.Join(",", missing)}");
+		Debug.Log($"Missing: {missing.Count} items - {string.Join(",", missing)}");
 		if (missing.Count == 0)
 			FinishedGame();
 

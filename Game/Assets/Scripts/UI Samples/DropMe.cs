@@ -24,8 +24,8 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 
 		Sprite dropSprite = GetDropSprite(data);
 		if (dropSprite != null) {
-			receivingImage.overrideSprite = dropSprite;
 			if (data.pointerDrag.tag == this.tag) {
+				receivingImage.overrideSprite = dropSprite;
 				data.pointerDrag.SendMessage("disable");
 				disabled = true;
 

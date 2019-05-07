@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlantController : MonoBehaviour {
 
-	public GameControlScript gameController;
+	public GameController gameController;
 
 	void OnTriggerEnter(Collider other) {
 		gameController.Inventory.Add(this.gameObject.tag);
-		gameController.CheckFinish();
 		this.gameObject.SetActive(false);
+		gameController.CheckFinish();
 	}
 }

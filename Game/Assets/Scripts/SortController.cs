@@ -23,7 +23,7 @@ public class SortController : MonoBehaviour {
 				missing.Add(item);
 			}
 		}
-		Debug.Log($"Missing: {missing.Count} items, {string.Join(",", missing)}");
+		Debug.Log($"Missing: {missing.Count} items - {string.Join(",", missing)}");
 		if (missing.Count == 0)
 			FinishedSort();
 
